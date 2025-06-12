@@ -2,7 +2,7 @@
         <head>
         <title>wcm_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='LIST.html'>LIST</a></li></ul><li><a href='期末.html'>期末</a><li><a href='Reeborg.html'>Reeborg</a><li><a href='HomeWork.html'>HomeWork</a><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Answer-1.html'>Answer-1</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='Answer-2.html'>Answer-2</a></li></li></ul></ul><li><a href='Midterm.html'>Midterm</a><li><a href='Final.html'>Final</a><li><a href='Brython.html'>Brython</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='LIST.html'>LIST</a></li></ul><li><a href='期末Reeborg.html'>期末Reeborg</a><li><a href='Reeborg.html'>Reeborg</a><li><a href='ProjectCheck.html'>ProjectCheck</a><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='Answer.html'>Answer</a></li></ul><li><a href='HW2.html'>HW2</a></li></ul><li><a href='Midterm.html'>Midterm</a><li><a href='Final.html'>Final</a><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,33 +142,14 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">HW1 << <a href='HW1.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2<br /><h1>Answer-1</h1>
-<p><strong>如何推送</strong><br/>1.把網頁改成靜態//convert</p>
-<p>2.關閉:Ctrl + C，關閉waitress 後在管理員命令列輸入"taskkill /IM nginx.exe /F" 關掉 nginx</p>
-<p>3.cd 至倉儲位置</p>
-<p>4.啟動你的putty key</p>
-<p>5.git add . git commit -m"xxxx" git push git@ 改成你IPV6的PUTTY Configuration的名字 :mdewcm2025/hw-github name.git</p>
-<h4><strong>如何再一次使用</strong></h4>
-<p>1.更改網路ipv4~ipv6</p>
-<p>2.啟動nginx</p>
-<p>3.在全球資訊網打入 localhost 如果可以 輸入localhost/reeborg //讓他可以讀到本地資料夾</p>
-<p>4.記得 在管理員命令列輸入"taskkill /IM nginx.exe /F" 關掉 nginx</p>
-<p>5.cd y:\tmp\s 後在運行框啟動python start.watress.py 後啟動nginx 在看是否能啟動動態網頁https://w13.mde.nfu.edu.tw/</p>
-<p><br/>6.關閉:Ctrl + C，關閉waitress 後在管理員命令列輸入"taskkill /IM nginx.exe /F" 關掉 nginx</p>
-<h4>如何第一次使用</h4>
-<p>1.<span>更</span>改網路ipv4~ipv6</p>
-<p>2.啟動nginx</p>
-<p>3.在nginx html 資料夾中 git clone https://github.com/mdecycu/reeborg.git //這樣nginx 才能在網頁中讀到資料</p>
-<p>4.在全球資訊網打入 localhost 如果可以 輸入localhost/reeborg //讓他可以讀到本地資料夾</p>
-<p>5.取得簽章 用certbot.7z 取得 //記得 在管理員命令列輸入"taskkill /IM nginx.exe /F" 關掉 nginx</p>
-<p>6.檢查是否有w13.mde.nfu.edu.tw//在命令列輸入"nslookup" 後輸入"w13.mde.nfu.edu.tw"<br/> 再下載certbot.7z 後安裝certbot</p>
-<p>7.先開NGINX <br/>安裝certbot的位置 打開 run.bat 管理者命令列輸入 certbot certonly --standalone --register-unsafely-without-email最後綁定"w13.mde.nfu.edu.tw"</p>
-<p>8.把證書：<br/> C:\Certbot\live\w13.mde.nfu.edu.tw\fullchain.pem<br/> 私鑰：<br/> C:\Certbot\live\w13.mde.nfu.edu.tw\privkey.pem <br/> 等等 丟到 nginx&gt;&gt;conf 資料夾中</p>
-<p>9.在nginx &gt;&gt; conf 資料夾中 找到 nginx_conf 並把他改只有老師提供的 <br/>其中 server改成W13<br/> ssl_certificate F:/wcmtw/nginx-new/nginx-1.28.0/conf/fullchain.pem;<br/> ssl_certificate_key F:/wcmtw/nginx-new/nginx-1.28.0/conf/privkey.pem;</p>
-<p>10.建立一個start.watress.py 老師有給讓你的 Flask 應用一直運作中，能被 nginx 反向代理到外網。</p>
-<p>11.cd y:\tmp\s 安裝pip install waitress 後啟動python start.watress.py 後啟動nginx 在看是否能啟動動態網頁https://w13.mde.nfu.edu.tw/</p>
-<p><br/>12.關閉:Ctrl + C，關閉waitress 後在管理員命令列輸入"taskkill /IM nginx.exe /F" 關掉 nginx</p>
-<br />HW1 << <a href='HW1.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
+    <div id="tipue_search_content">LIST << <a href='LIST.html'>Previous</a> <a href='Reeborg.html'>Next</a> >> Reeborg<br /><h1>期末Reeborg</h1>
+<p>機器人垂直收割</p>
+<p><a href="https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=python/harvest1.py">https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=python/harvest1.py</a></p>
+<p></p>
+<p><span>機器人水平收割</span></p>
+<p><a href="https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=%2FhwQIU0908%2Freeborg%2Fworlds%2Fmenus%2Fselect_collection_en.json&amp;name=Alone&amp;url=%2Fhw-QIU0908%2Freeborg%2Fworlds%2Ftutorial_en%2Fharvest1.json">https://mdewcm2025.github.io/hw-QIU0908/reeborg/?lang=en&amp;mode=python&amp;menu=/hwQIU0908/reeborg/worlds/menus/select_collection_en.json&amp;name=Alone&amp;url=/hw-QIU0908/reeborg/worlds/tutorial_en/harvest1.json&amp;editor=python/harvest2.py</a></p>
+<p></p>
+<br />LIST << <a href='LIST.html'>Previous</a> <a href='Reeborg.html'>Next</a> >> Reeborg</div>
         
     <!-- footer -->
       <div class="container">
